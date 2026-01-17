@@ -213,11 +213,11 @@ button {
   }
 }
 
-
+/* 
 .login, .register {
   display: none;
 }
 
 .login.active, .register.active {
   display: flex;
-}
+} */
