@@ -32,7 +32,7 @@ body {
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-
+  /* height: 30px; */
   display: flex;
   flex-direction: column;
   /* gap: 25px; */
@@ -46,16 +46,10 @@ body {
   display: none;
 }
 
-/* ===== FORM ===== */
-.login_form {
+form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-}
-form{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  /* gap: 10px; */
 }
 
 /* ===== BUTTONS ===== */
@@ -131,6 +125,11 @@ b {
   }
 }
 
-.login_form,.register input{
-  width: 100%;
+input {
+  height: 29px;
+  border-radius: 5px;
+  border: 0;
+  display: flex;
+  /* gap: 30px; */
+  margin-bottom: 15px;
 }
