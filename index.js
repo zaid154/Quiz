@@ -54,7 +54,7 @@ signinBtn.addEventListener("click", (e) => {
     enter_password.value === user.password
   ) {
     alert("Login Successful");
-    window.location.href = "question.html";
+    window.location.href = "home.html";
   } else {
     alert("Invalid Email or Password");
   }
