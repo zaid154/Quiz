@@ -86,3 +86,37 @@
     border-color: peru;
     box-shadow: 0 0 6px peru;
 }
+
+
+
+.topic_box{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+.topic {
+    width: 25%;
+    min-width: 220px;
+    height: 150px;
+    background: white;
+    color: black;
+    border-radius: 15px;
+    border: 4px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.topic:hover {
+    background: rgb(134, 252, 95);
+    transform: scale(1.05);
+    cursor: pointer;
+}
