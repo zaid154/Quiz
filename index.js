@@ -53,10 +53,10 @@ signinBtn.addEventListener("click", (e) => {
     enter_email.value === user.email &&
     enter_password.value === user.password
   ) {
-    alert("Login Successful 🎉");
+    alert("Login Successful");
     window.location.href = "question.html";
   } else {
-    alert("Invalid Email or Password ❌");
+    alert("Invalid Email or Password");
   }
 });
 
@@ -82,7 +82,7 @@ registerBtn.addEventListener("click", (e) => {
   today.setHours(0, 0, 0, 0);
 
   if (dob > today) {
-    alert("DOB cannot be a future date ❌");
+    alert("DOB cannot be a future date");
     return;
   }
 
@@ -96,7 +96,7 @@ registerBtn.addEventListener("click", (e) => {
 
   localStorage.setItem("user", JSON.stringify(userData));
 
-  alert("Account Created Successfully ✅");
+  alert("Account Created Successfully");
 
   /* ===== SWITCH TO LOGIN ===== */
   login.classList.add("active");
