@@ -103,13 +103,13 @@
   color: black;
   border-radius: 15px;
   border: 4px solid black;
-  /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 5px;
   transition: all 0.3s ease;
-    background-size: cover;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -117,6 +117,7 @@
 .topic:hover {
   transform: scale(1.05);
   cursor: pointer;
+  
 }
 #q_html {
   background-image: url("html.jpg");
@@ -128,21 +129,61 @@
   background-image: url("js.jpg");
 }
 #q_java {
-  background-image: url("html.jpg");
+  background-image: url("java.png");
 }
-#q_csharp{
-  background-image: url("html.jpg");
+#q_php {
+  background-image: url("php.png");
 }
 #q_c {
   background-image: url("c_programing.jpg");
 }
 #q_cpp {
-  background-image: url("cpp.png");
+  background-image: url("cpp.jpg");
 }
 #q_py {
   background-image: url("py.png");
 }
 #q_sql {
-  background-image: url("html.jpg");
+  background-image: url("sql.jpg");
 }
 
+.q_btn {
+  height: 25px;
+  width: 100px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 1.8); 
+  color: white;
+  font-size: 14px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.q_btn:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  background-color: paleturquoise;
+  
+}
+footer {
+  height: 300px;
+  background: pink;
+  display: flex;
+}
+
+.info {
+  height: 100%;
+  width: 50%;
+  background: palegoldenrod;
+}
+
+.map {
+  height: 100%;
+  width: 50%;
+  background: rgb(47, 255, 85);
+}
