@@ -52,7 +52,7 @@ signinBtn.addEventListener("click", (e) => {
         window.location.href = "home.html";
 
     } else {
-        alert("Invalid email or password");
+        alert("Invalid credentials");
     }
 });
 
