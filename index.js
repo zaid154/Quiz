@@ -1,5 +1,3 @@
-
-/* ===== GET ELEMENTS ===== */
 let registerbtn = document.getElementById("register");
 let loginLink = document.getElementById("login_link");
 
@@ -28,36 +26,34 @@ logs.forEach((icon) => {
   });
 });
 
-/* ===== LOGIN CHECK ===== */
+/* ===== LOGIN CHECK ===== */// LOGIN BUTTON
 signinBtn.addEventListener("click", (e) => {
-  e.preventDefault();
+    e.preventDefault();
 
-  if (
-    enter_email.value.trim() === "" ||
-    enter_password.value.trim() === ""
-  ) {
-    alert("Both fields are compulsory");
-    return;
-  }
+    let email = enter_email.value.trim();
+    let password = enter_password.value.trim();
 
-  let storedUser = localStorage.getItem("user");
+    let storedUser = localStorage.getItem("user");
 
-  if (storedUser === null) {
-    alert("No account found. Please register first.");
-    return;
-  }
+    if (!storedUser) {
+        alert("No user found. Please register first");
+        return;
+    }
 
-  let user = JSON.parse(storedUser);
+    let user = JSON.parse(storedUser);
 
-  if (
-    enter_email.value === user.email &&
-    enter_password.value === user.password
-  ) {
-    alert("Login Successful");
-    window.location.href = "home.html";
-  } else {
-    alert("Invalid Email or Password");
-  }
+    if (email === user.email && password === user.password) {
+
+        localStorage.setItem("loginUser", JSON.stringify({
+            name: user.name,
+            email: user.email
+        }));
+
+        window.location.href = "home.html";
+
+    } else {
+        alert("Invalid email or password");
+    }
 });
 
 /* ===== REGISTER CHECK ===== */
@@ -93,6 +89,7 @@ registerBtn.addEventListener("click", (e) => {
     email: create_email.value,
     password: create_password.value,
   };
+  
 
   localStorage.setItem("user", JSON.stringify(userData));
 
@@ -119,3 +116,8 @@ loginLink.addEventListener("click", () => {
   register.classList.add("hidden");
   register.classList.remove("active");
 });
+
+
+
+
+

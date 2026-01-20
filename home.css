@@ -36,7 +36,7 @@
 
 
 /* EMAIL */
-.name,.email{
+#home_name,#home_email{
     color: #bbb;
     font-size: 11px;
 }
