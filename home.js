@@ -33,15 +33,14 @@ function goToQuiz(button, page) {
     window.location.href = page;
   });
 }
-
-goToQuiz(html_btn, "html_quiz.html");
-goToQuiz(css_btn,  "css_quiz.html");
-goToQuiz(js_btn,   "js_quiz.html");
-goToQuiz(c_btn,    "c_quiz.html");
-goToQuiz(cpp_btn,  "cpp_quiz.html");
-goToQuiz(php_btn,  "php_quiz.html");
-goToQuiz(py_btn,   "python_quiz.html");
-goToQuiz(java_btn, "java_quiz.html");
-goToQuiz(sql_btn,  "sql_quiz.html");
+goToQuiz(html_btn, "./quiz_question/html_quiz.html");
+goToQuiz(css_btn,  "./quiz_question/css_quiz.html");
+goToQuiz(js_btn,   "./quiz_question/js_quiz.html");
+goToQuiz(c_btn,    "./quiz_question/c_quiz.html");
+goToQuiz(cpp_btn,  "./quiz_question/cpp_quiz.html");
+goToQuiz(php_btn,  "./quiz_question/php_quiz.html");
+goToQuiz(py_btn,   "./quiz_question/python_quiz.html");
+goToQuiz(java_btn, "./quiz_question/java_quiz.html");
+goToQuiz(sql_btn,  "./quiz_question/sql_quiz.html");
 
 
