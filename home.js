@@ -39,7 +39,7 @@ goToQuiz(js_btn,   "./quiz_question/js_quiz.html");
 goToQuiz(c_btn,    "./quiz_question/c_quiz.html");
 goToQuiz(cpp_btn,  "./quiz_question/cpp_quiz.html");
 goToQuiz(php_btn,  "./quiz_question/php_quiz.html");
-goToQuiz(py_btn,   "./quiz_question/python_quiz.html");
+goToQuiz(py_btn,   "./quiz_question/py_quiz.html");
 goToQuiz(java_btn, "./quiz_question/java_quiz.html");
 goToQuiz(sql_btn,  "./quiz_question/sql_quiz.html");
 

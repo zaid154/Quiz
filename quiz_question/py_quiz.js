@@ -1,61 +1,105 @@
 const questions = [
   {
-    q: "What does HTML stand for?",
+    q: "Who created the Python programming language?",
     options: [
-      "Hyper Text Markup Language",
-      "High Text Machine Language",
-      "Hyperlinks and Text Markup Language",
-      "Home Tool Markup Language"
+      "Dennis Ritchie",
+      "James Gosling",
+      "Guido van Rossum",
+      "Bjarne Stroustrup"
     ],
-    answer: 0
+    answer: 2
   },
   {
-    q: "Which tag is used to create a hyperlink in HTML?",
-    options: ["<link>", "<a>", "<href>", "<url>"],
+    q: "Python is a ______ language.",
+    options: [
+      "Compiled",
+      "Interpreted",
+      "Assembly",
+      "Machine"
+    ],
     answer: 1
   },
   {
-    q: "Which HTML tag is used to display an image?",
-    options: ["<image>", "<img>", "<src>", "<picture>"],
+    q: "Which symbol is used for comments in Python?",
+    options: [
+      "//",
+      "/* */",
+      "#",
+      "--"
+    ],
+    answer: 2
+  },
+  {
+    q: "Which keyword is used to define a function in Python?",
+    options: [
+      "function",
+      "def",
+      "fun",
+      "define"
+    ],
     answer: 1
   },
   {
-    q: "Which tag is used for the largest heading in HTML?",
-    options: ["<h6>", "<head>", "<h1>", "<heading>"],
-    answer: 2
-  },
-  {
-    q: "Which attribute provides alternative text for an image?",
-    options: ["title", "src", "alt", "href"],
-    answer: 2
-  },
-  {
-    q: "Which tag is used to create an ordered list?",
-    options: ["<ul>", "<ol>", "<li>", "<list>"],
-    answer: 1
-  },
-  {
-    q: "Which HTML tag is used to insert a line break?",
-    options: ["<break>", "<lb>", "<br>", "<hr>"],
-    answer: 2
-  },
-  {
-    q: "Which tag is used to create a table row?",
-    options: ["<td>", "<th>", "<tr>", "<table>"],
-    answer: 2
-  },
-  {
-    q: "Which tag is used to make text bold?",
-    options: ["<bold>", "<b>", "<strong>", "Both <b> and <strong>"],
+    q: "Which data type is used to store text in Python?",
+    options: [
+      "int",
+      "float",
+      "char",
+      "str"
+    ],
     answer: 3
   },
   {
-    q: "Which tag contains all visible content of a webpage?",
-    options: ["<html>", "<head>", "<body>", "<title>"],
+    q: "Which function is used to display output in Python?",
+    options: [
+      "echo()",
+      "printf()",
+      "print()",
+      "output()"
+    ],
+    answer: 2
+  },
+  {
+    q: "Which keyword is used to create a loop in Python?",
+    options: [
+      "repeat",
+      "loop",
+      "for",
+      "iterate"
+    ],
+    answer: 2
+  },
+  {
+    q: "Which of the following is a correct Python file extension?",
+    options: [
+      ".java",
+      ".py",
+      ".cpp",
+      ".js"
+    ],
+    answer: 1
+  },
+  {
+    q: "Which keyword is used to check a condition in Python?",
+    options: [
+      "check",
+      "if",
+      "when",
+      "condition"
+    ],
+    answer: 1
+  },
+  {
+    q: "Which data type is used to store multiple values in a single variable?",
+    options: [
+      "int",
+      "string",
+      "list",
+      "float"
+    ],
     answer: 2
   }
 ];
-
 
 // ===== VARIABLES =====
 let qno = 0;

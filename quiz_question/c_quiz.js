@@ -1,61 +1,105 @@
 const questions = [
   {
-    q: "What does HTML stand for?",
+    q: "Who is the father of C programming language?",
     options: [
-      "Hyper Text Markup Language",
-      "High Text Machine Language",
-      "Hyperlinks and Text Markup Language",
-      "Home Tool Markup Language"
+      "Dennis Ritchie",
+      "James Gosling",
+      "Bjarne Stroustrup",
+      "Guido van Rossum"
     ],
     answer: 0
   },
   {
-    q: "Which tag is used to create a hyperlink in HTML?",
-    options: ["<link>", "<a>", "<href>", "<url>"],
+    q: "Which symbol is used to end a statement in C?",
+    options: [
+      ".",
+      ":",
+      ";",
+      ","
+    ],
+    answer: 2
+  },
+  {
+    q: "Which keyword is used to declare a variable in C?",
+    options: [
+      "var",
+      "int",
+      "define",
+      "declare"
+    ],
     answer: 1
   },
   {
-    q: "Which HTML tag is used to display an image?",
-    options: ["<image>", "<img>", "<src>", "<picture>"],
+    q: "Which function is used to print output in C?",
+    options: [
+      "print()",
+      "cout",
+      "printf()",
+      "output()"
+    ],
+    answer: 2
+  },
+  {
+    q: "Which header file is required for printf()?",
+    options: [
+      "<conio.h>",
+      "<stdlib.h>",
+      "<stdio.h>",
+      "<string.h>"
+    ],
+    answer: 2
+  },
+  {
+    q: "Which operator is used for logical AND in C?",
+    options: [
+      "&",
+      "&&",
+      "|",
+      "||"
+    ],
     answer: 1
   },
   {
-    q: "Which tag is used for the largest heading in HTML?",
-    options: ["<h6>", "<head>", "<h1>", "<heading>"],
+    q: "Which data type is used to store decimal values in C?",
+    options: [
+      "int",
+      "char",
+      "float",
+      "void"
+    ],
     answer: 2
   },
   {
-    q: "Which attribute provides alternative text for an image?",
-    options: ["title", "src", "alt", "href"],
+    q: "Which loop is guaranteed to execute at least once?",
+    options: [
+      "for",
+      "while",
+      "do-while",
+      "if"
+    ],
     answer: 2
   },
   {
-    q: "Which tag is used to create an ordered list?",
-    options: ["<ul>", "<ol>", "<li>", "<list>"],
+    q: "Which symbol is used to access value at an address?",
+    options: [
+      "&",
+      "*",
+      "#",
+      "%"
+    ],
     answer: 1
   },
   {
-    q: "Which HTML tag is used to insert a line break?",
-    options: ["<break>", "<lb>", "<br>", "<hr>"],
-    answer: 2
-  },
-  {
-    q: "Which tag is used to create a table row?",
-    options: ["<td>", "<th>", "<tr>", "<table>"],
-    answer: 2
-  },
-  {
-    q: "Which tag is used to make text bold?",
-    options: ["<bold>", "<b>", "<strong>", "Both <b> and <strong>"],
+    q: "What is the correct extension of a C program?",
+    options: [
+      ".cpp",
+      ".java",
+      ".py",
+      ".c"
+    ],
     answer: 3
-  },
-  {
-    q: "Which tag contains all visible content of a webpage?",
-    options: ["<html>", "<head>", "<body>", "<title>"],
-    answer: 2
   }
 ];
-
 
 // ===== VARIABLES =====
 let qno = 0;

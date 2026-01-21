@@ -1,58 +1,103 @@
 const questions = [
   {
-    q: "What does HTML stand for?",
+    q: "What does PHP stand for?",
     options: [
-      "Hyper Text Markup Language",
-      "High Text Machine Language",
-      "Hyperlinks and Text Markup Language",
-      "Home Tool Markup Language"
+      "Personal Home Page",
+      "Private Home Page",
+      "PHP: Hypertext Preprocessor",
+      "Pre Hypertext Processor"
     ],
-    answer: 0
+    answer: 2
   },
   {
-    q: "Which tag is used to create a hyperlink in HTML?",
-    options: ["<link>", "<a>", "<href>", "<url>"],
+    q: "PHP is a ______ language.",
+    options: [
+      "Client-side scripting",
+      "Server-side scripting",
+      "Markup",
+      "Styling"
+    ],
     answer: 1
   },
   {
-    q: "Which HTML tag is used to display an image?",
-    options: ["<image>", "<img>", "<src>", "<picture>"],
+    q: "Which symbol is used to declare a variable in PHP?",
+    options: [
+      "#",
+      "@",
+      "$",
+      "%"
+    ],
+    answer: 2
+  },
+  {
+    q: "Which function is used to output text in PHP?",
+    options: [
+      "print()",
+      "echo",
+      "console.log()",
+      "write()"
+    ],
     answer: 1
   },
   {
-    q: "Which tag is used for the largest heading in HTML?",
-    options: ["<h6>", "<head>", "<h1>", "<heading>"],
+    q: "Which file extension is used for PHP files?",
+    options: [
+      ".html",
+      ".js",
+      ".php",
+      ".css"
+    ],
     answer: 2
   },
   {
-    q: "Which attribute provides alternative text for an image?",
-    options: ["title", "src", "alt", "href"],
-    answer: 2
-  },
-  {
-    q: "Which tag is used to create an ordered list?",
-    options: ["<ul>", "<ol>", "<li>", "<list>"],
+    q: "Which superglobal variable is used to collect form data?",
+    options: [
+      "$_FORM",
+      "$_POST",
+      "$_GETDATA",
+      "$_DATA"
+    ],
     answer: 1
   },
   {
-    q: "Which HTML tag is used to insert a line break?",
-    options: ["<break>", "<lb>", "<br>", "<hr>"],
+    q: "Which statement is used to stop script execution in PHP?",
+    options: [
+      "stop",
+      "exit",
+      "break",
+      "return"
+    ],
+    answer: 1
+  },
+  {
+    q: "Which operator is used to concatenate strings in PHP?",
+    options: [
+      "+",
+      "&",
+      ".",
+      ","
+    ],
     answer: 2
   },
   {
-    q: "Which tag is used to create a table row?",
-    options: ["<td>", "<th>", "<tr>", "<table>"],
+    q: "Which function is used to find the length of a string in PHP?",
+    options: [
+      "count()",
+      "length()",
+      "strlen()",
+      "size()"
+    ],
     answer: 2
   },
   {
-    q: "Which tag is used to make text bold?",
-    options: ["<bold>", "<b>", "<strong>", "Both <b> and <strong>"],
-    answer: 3
-  },
-  {
-    q: "Which tag contains all visible content of a webpage?",
-    options: ["<html>", "<head>", "<body>", "<title>"],
-    answer: 2
+    q: "Which tag is used to start PHP code?",
+    options: [
+      "<php>",
+      "<?php>",
+      "<?",
+      "<script>"
+    ],
+    answer: 1
   }
 ];
 

@@ -1,58 +1,103 @@
 const questions = [
   {
-    q: "What does HTML stand for?",
+    q: "Who developed the Java programming language?",
     options: [
-      "Hyper Text Markup Language",
-      "High Text Machine Language",
-      "Hyperlinks and Text Markup Language",
-      "Home Tool Markup Language"
+      "Dennis Ritchie",
+      "James Gosling",
+      "Bjarne Stroustrup",
+      "Guido van Rossum"
     ],
-    answer: 0
-  },
-  {
-    q: "Which tag is used to create a hyperlink in HTML?",
-    options: ["<link>", "<a>", "<href>", "<url>"],
     answer: 1
   },
   {
-    q: "Which HTML tag is used to display an image?",
-    options: ["<image>", "<img>", "<src>", "<picture>"],
+    q: "Java is a ______ language.",
+    options: [
+      "Procedure-oriented",
+      "Object-oriented",
+      "Assembly",
+      "Machine"
+    ],
     answer: 1
   },
   {
-    q: "Which tag is used for the largest heading in HTML?",
-    options: ["<h6>", "<head>", "<h1>", "<heading>"],
+    q: "Which keyword is used to define a class in Java?",
+    options: [
+      "struct",
+      "define",
+      "class",
+      "object"
+    ],
     answer: 2
   },
   {
-    q: "Which attribute provides alternative text for an image?",
-    options: ["title", "src", "alt", "href"],
-    answer: 2
-  },
-  {
-    q: "Which tag is used to create an ordered list?",
-    options: ["<ul>", "<ol>", "<li>", "<list>"],
+    q: "Which method is the entry point of a Java program?",
+    options: [
+      "start()",
+      "main()",
+      "run()",
+      "init()"
+    ],
     answer: 1
   },
   {
-    q: "Which HTML tag is used to insert a line break?",
-    options: ["<break>", "<lb>", "<br>", "<hr>"],
+    q: "Which symbol is used to end a statement in Java?",
+    options: [
+      ".",
+      ":",
+      ";",
+      ","
+    ],
     answer: 2
   },
   {
-    q: "Which tag is used to create a table row?",
-    options: ["<td>", "<th>", "<tr>", "<table>"],
+    q: "Which keyword is used to inherit a class in Java?",
+    options: [
+      "inherits",
+      "extends",
+      "implements",
+      "super"
+    ],
+    answer: 1
+  },
+  {
+    q: "Which data type is used to store whole numbers in Java?",
+    options: [
+      "float",
+      "double",
+      "int",
+      "char"
+    ],
     answer: 2
   },
   {
-    q: "Which tag is used to make text bold?",
-    options: ["<bold>", "<b>", "<strong>", "Both <b> and <strong>"],
-    answer: 3
+    q: "Which keyword is used to create an object in Java?",
+    options: [
+      "object",
+      "class",
+      "new",
+      "this"
+    ],
+    answer: 2
   },
   {
-    q: "Which tag contains all visible content of a webpage?",
-    options: ["<html>", "<head>", "<body>", "<title>"],
+    q: "Which package is imported by default in Java?",
+    options: [
+      "java.util",
+      "java.io",
+      "java.lang",
+      "java.sql"
+    ],
     answer: 2
+  },
+  {
+    q: "Which keyword is used to handle exceptions in Java?",
+    options: [
+      "error",
+      "catch",
+      "throw",
+      "exception"
+    ],
+    answer: 1
   }
 ];
 

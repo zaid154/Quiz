@@ -1,58 +1,103 @@
 const questions = [
   {
-    q: "What does HTML stand for?",
+    q: "What does CSS stand for?",
     options: [
-      "Hyper Text Markup Language",
-      "High Text Machine Language",
-      "Hyperlinks and Text Markup Language",
-      "Home Tool Markup Language"
+      "Colorful Style Sheets",
+      "Creative Style Sheets",
+      "Cascading Style Sheets",
+      "Computer Style Sheets"
     ],
-    answer: 0
+    answer: 2
   },
   {
-    q: "Which tag is used to create a hyperlink in HTML?",
-    options: ["<link>", "<a>", "<href>", "<url>"],
+    q: "Which CSS property is used to change text color?",
+    options: [
+      "background-color",
+      "font-color",
+      "color",
+      "text-color"
+    ],
+    answer: 2
+  },
+  {
+    q: "Which CSS property controls the text size?",
+    options: [
+      "font-style",
+      "text-size",
+      "font-size",
+      "size"
+    ],
+    answer: 2
+  },
+  {
+    q: "Which symbol is used to select a class in CSS?",
+    options: [
+      "#",
+      ".",
+      "*",
+      "@"
+    ],
     answer: 1
   },
   {
-    q: "Which HTML tag is used to display an image?",
-    options: ["<image>", "<img>", "<src>", "<picture>"],
+    q: "Which symbol is used to select an id in CSS?",
+    options: [
+      ".",
+      "*",
+      "#",
+      "@"
+    ],
+    answer: 2
+  },
+  {
+    q: "Which CSS property is used to change the background color?",
+    options: [
+      "color",
+      "bgcolor",
+      "background-color",
+      "background"
+    ],
+    answer: 2
+  },
+  {
+    q: "Which property is used to make text bold in CSS?",
+    options: [
+      "font-style",
+      "text-weight",
+      "font-weight",
+      "bold"
+    ],
+    answer: 2
+  },
+  {
+    q: "Which CSS property is used to center text?",
+    options: [
+      "align",
+      "text-align",
+      "center",
+      "float"
+    ],
     answer: 1
   },
   {
-    q: "Which tag is used for the largest heading in HTML?",
-    options: ["<h6>", "<head>", "<h1>", "<heading>"],
+    q: "Which property adds space inside an element?",
+    options: [
+      "margin",
+      "border",
+      "padding",
+      "spacing"
+    ],
     answer: 2
   },
   {
-    q: "Which attribute provides alternative text for an image?",
-    options: ["title", "src", "alt", "href"],
-    answer: 2
-  },
-  {
-    q: "Which tag is used to create an ordered list?",
-    options: ["<ul>", "<ol>", "<li>", "<list>"],
-    answer: 1
-  },
-  {
-    q: "Which HTML tag is used to insert a line break?",
-    options: ["<break>", "<lb>", "<br>", "<hr>"],
-    answer: 2
-  },
-  {
-    q: "Which tag is used to create a table row?",
-    options: ["<td>", "<th>", "<tr>", "<table>"],
-    answer: 2
-  },
-  {
-    q: "Which tag is used to make text bold?",
-    options: ["<bold>", "<b>", "<strong>", "Both <b> and <strong>"],
+    q: "Which CSS property is used to hide an element?",
+    options: [
+      "visibility: hidden",
+      "display: none",
+      "opacity: 0",
+      "All of the above"
+    ],
     answer: 3
-  },
-  {
-    q: "Which tag contains all visible content of a webpage?",
-    options: ["<html>", "<head>", "<body>", "<title>"],
-    answer: 2
   }
 ];
 

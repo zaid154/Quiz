@@ -1,61 +1,105 @@
 const questions = [
   {
-    q: "What does HTML stand for?",
+    q: "What does SQL stand for?",
     options: [
-      "Hyper Text Markup Language",
-      "High Text Machine Language",
-      "Hyperlinks and Text Markup Language",
-      "Home Tool Markup Language"
+      "Structured Query Language",
+      "Simple Query Language",
+      "Standard Query Language",
+      "Sequential Query Language"
     ],
     answer: 0
   },
   {
-    q: "Which tag is used to create a hyperlink in HTML?",
-    options: ["<link>", "<a>", "<href>", "<url>"],
+    q: "Which SQL command is used to retrieve data from a table?",
+    options: [
+      "GET",
+      "FETCH",
+      "SELECT",
+      "READ"
+    ],
+    answer: 2
+  },
+  {
+    q: "Which SQL clause is used to filter records?",
+    options: [
+      "ORDER BY",
+      "GROUP BY",
+      "WHERE",
+      "HAVING"
+    ],
+    answer: 2
+  },
+  {
+    q: "Which SQL statement is used to insert new data into a table?",
+    options: [
+      "ADD",
+      "INSERT INTO",
+      "UPDATE",
+      "CREATE"
+    ],
     answer: 1
   },
   {
-    q: "Which HTML tag is used to display an image?",
-    options: ["<image>", "<img>", "<src>", "<picture>"],
+    q: "Which SQL statement is used to modify existing records?",
+    options: [
+      "MODIFY",
+      "CHANGE",
+      "UPDATE",
+      "ALTER"
+    ],
+    answer: 2
+  },
+  {
+    q: "Which SQL keyword is used to sort the result set?",
+    options: [
+      "SORT",
+      "ORDER BY",
+      "GROUP BY",
+      "ARRANGE"
+    ],
     answer: 1
   },
   {
-    q: "Which tag is used for the largest heading in HTML?",
-    options: ["<h6>", "<head>", "<h1>", "<heading>"],
+    q: "Which SQL function is used to count rows?",
+    options: [
+      "SUM()",
+      "TOTAL()",
+      "COUNT()",
+      "NUMBER()"
+    ],
     answer: 2
   },
   {
-    q: "Which attribute provides alternative text for an image?",
-    options: ["title", "src", "alt", "href"],
+    q: "Which SQL command is used to delete records from a table?",
+    options: [
+      "REMOVE",
+      "DROP",
+      "DELETE",
+      "CLEAR"
+    ],
     answer: 2
   },
   {
-    q: "Which tag is used to create an ordered list?",
-    options: ["<ul>", "<ol>", "<li>", "<list>"],
-    answer: 1
-  },
-  {
-    q: "Which HTML tag is used to insert a line break?",
-    options: ["<break>", "<lb>", "<br>", "<hr>"],
+    q: "Which SQL statement is used to create a table?",
+    options: [
+      "NEW TABLE",
+      "MAKE TABLE",
+      "CREATE TABLE",
+      "ADD TABLE"
+    ],
     answer: 2
   },
   {
-    q: "Which tag is used to create a table row?",
-    options: ["<td>", "<th>", "<tr>", "<table>"],
-    answer: 2
-  },
-  {
-    q: "Which tag is used to make text bold?",
-    options: ["<bold>", "<b>", "<strong>", "Both <b> and <strong>"],
-    answer: 3
-  },
-  {
-    q: "Which tag contains all visible content of a webpage?",
-    options: ["<html>", "<head>", "<body>", "<title>"],
+    q: "Which constraint ensures that a column has unique values?",
+    options: [
+      "PRIMARY KEY",
+      "FOREIGN KEY",
+      "UNIQUE",
+      "NOT NULL"
+    ],
     answer: 2
   }
 ];
-
 
 // ===== VARIABLES =====
 let qno = 0;

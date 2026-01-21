@@ -1,57 +1,102 @@
 const questions = [
   {
-    q: "What does HTML stand for?",
+    q: "Who is the creator of C++ programming language?",
     options: [
-      "Hyper Text Markup Language",
-      "High Text Machine Language",
-      "Hyperlinks and Text Markup Language",
-      "Home Tool Markup Language"
+      "Dennis Ritchie",
+      "Bjarne Stroustrup",
+      "James Gosling",
+      "Guido van Rossum"
+    ],
+    answer: 1
+  },
+  {
+    q: "Which symbol is used to end a statement in C++?",
+    options: [
+      ".",
+      ":",
+      ";",
+      ","
+    ],
+    answer: 2
+  },
+  {
+    q: "Which header file is used for input and output in C++?",
+    options: [
+      "<stdio.h>",
+      "<stdlib.h>",
+      "<iostream>",
+      "<conio.h>"
+    ],
+    answer: 2
+  },
+  {
+    q: "Which keyword is used to create an object in C++?",
+    options: [
+      "class",
+      "object",
+      "new",
+      "this"
+    ],
+    answer: 2
+  },
+  {
+    q: "Which operator is used to access class members?",
+    options: [
+      ".",
+      ":",
+      "::",
+      "->"
     ],
     answer: 0
   },
   {
-    q: "Which tag is used to create a hyperlink in HTML?",
-    options: ["<link>", "<a>", "<href>", "<url>"],
+    q: "Which concept allows using the same function name with different parameters?",
+    options: [
+      "Inheritance",
+      "Encapsulation",
+      "Polymorphism",
+      "Abstraction"
+    ],
+    answer: 2
+  },
+  {
+    q: "Which loop is guaranteed to execute at least once in C++?",
+    options: [
+      "for",
+      "while",
+      "do-while",
+      "if"
+    ],
+    answer: 2
+  },
+  {
+    q: "Which keyword is used to define a constant in C++?",
+    options: [
+      "final",
+      "const",
+      "define",
+      "static"
+    ],
     answer: 1
   },
   {
-    q: "Which HTML tag is used to display an image?",
-    options: ["<image>", "<img>", "<src>", "<picture>"],
+    q: "Which feature of C++ supports reusability?",
+    options: [
+      "Polymorphism",
+      "Inheritance",
+      "Encapsulation",
+      "Abstraction"
+    ],
     answer: 1
   },
   {
-    q: "Which tag is used for the largest heading in HTML?",
-    options: ["<h6>", "<head>", "<h1>", "<heading>"],
-    answer: 2
-  },
-  {
-    q: "Which attribute provides alternative text for an image?",
-    options: ["title", "src", "alt", "href"],
-    answer: 2
-  },
-  {
-    q: "Which tag is used to create an ordered list?",
-    options: ["<ul>", "<ol>", "<li>", "<list>"],
-    answer: 1
-  },
-  {
-    q: "Which HTML tag is used to insert a line break?",
-    options: ["<break>", "<lb>", "<br>", "<hr>"],
-    answer: 2
-  },
-  {
-    q: "Which tag is used to create a table row?",
-    options: ["<td>", "<th>", "<tr>", "<table>"],
-    answer: 2
-  },
-  {
-    q: "Which tag is used to make text bold?",
-    options: ["<bold>", "<b>", "<strong>", "Both <b> and <strong>"],
-    answer: 3
-  },
-  {
-    q: "Which tag contains all visible content of a webpage?",
-    options: ["<html>", "<head>", "<body>", "<title>"],
+    q: "What is the correct file extension for a C++ program?",
+    options: [
+      ".c",
+      ".java",
+      ".cpp",
+      ".py"
+    ],
     answer: 2
   }
 ];

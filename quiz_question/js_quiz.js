@@ -1,61 +1,105 @@
 const questions = [
   {
-    q: "What does HTML stand for?",
+    q: "JavaScript is a ______ language.",
     options: [
-      "Hyper Text Markup Language",
-      "High Text Machine Language",
-      "Hyperlinks and Text Markup Language",
-      "Home Tool Markup Language"
+      "Compiled",
+      "Interpreted",
+      "Markup",
+      "Assembly"
     ],
-    answer: 0
-  },
-  {
-    q: "Which tag is used to create a hyperlink in HTML?",
-    options: ["<link>", "<a>", "<href>", "<url>"],
     answer: 1
   },
   {
-    q: "Which HTML tag is used to display an image?",
-    options: ["<image>", "<img>", "<src>", "<picture>"],
+    q: "Which keyword is used to declare a variable in JavaScript?",
+    options: [
+      "int",
+      "var",
+      "string",
+      "define"
+    ],
     answer: 1
   },
   {
-    q: "Which tag is used for the largest heading in HTML?",
-    options: ["<h6>", "<head>", "<h1>", "<heading>"],
+    q: "Which symbol is used for single-line comments in JavaScript?",
+    options: [
+      "<!-- -->",
+      "/* */",
+      "//",
+      "#"
+    ],
     answer: 2
   },
   {
-    q: "Which attribute provides alternative text for an image?",
-    options: ["title", "src", "alt", "href"],
+    q: "Which function is used to print output in JavaScript?",
+    options: [
+      "print()",
+      "echo()",
+      "console.log()",
+      "document.write()"
+    ],
     answer: 2
   },
   {
-    q: "Which tag is used to create an ordered list?",
-    options: ["<ul>", "<ol>", "<li>", "<list>"],
-    answer: 1
-  },
-  {
-    q: "Which HTML tag is used to insert a line break?",
-    options: ["<break>", "<lb>", "<br>", "<hr>"],
-    answer: 2
-  },
-  {
-    q: "Which tag is used to create a table row?",
-    options: ["<td>", "<th>", "<tr>", "<table>"],
-    answer: 2
-  },
-  {
-    q: "Which tag is used to make text bold?",
-    options: ["<bold>", "<b>", "<strong>", "Both <b> and <strong>"],
+    q: "Which data type is NOT supported in JavaScript?",
+    options: [
+      "Number",
+      "Boolean",
+      "String",
+      "Character"
+    ],
     answer: 3
   },
   {
-    q: "Which tag contains all visible content of a webpage?",
-    options: ["<html>", "<head>", "<body>", "<title>"],
+    q: "Which operator is used for strict equality in JavaScript?",
+    options: [
+      "=",
+      "==",
+      "===",
+      "!="
+    ],
+    answer: 2
+  },
+  {
+    q: "Which keyword is used to define a constant in JavaScript?",
+    options: [
+      "var",
+      "let",
+      "const",
+      "static"
+    ],
+    answer: 2
+  },
+  {
+    q: "Which method is used to select an element by id?",
+    options: [
+      "getElement()",
+      "querySelectorAll()",
+      "getElementById()",
+      "getId()"
+    ],
+    answer: 2
+  },
+  {
+    q: "Which loop executes at least once even if the condition is false?",
+    options: [
+      "for",
+      "while",
+      "do-while",
+      "if"
+    ],
+    answer: 2
+  },
+  {
+    q: "Which keyword is used to create a function in JavaScript?",
+    options: [
+      "method",
+      "def",
+      "function",
+      "func"
+    ],
     answer: 2
   }
 ];
-
 
 // ===== VARIABLES =====
 let qno = 0;
