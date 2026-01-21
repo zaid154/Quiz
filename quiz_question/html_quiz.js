@@ -1,4 +1,3 @@
-// ================= QUESTIONS =================
 const questions = [
   {
     q: "What does HTML stand for?",
@@ -57,105 +56,94 @@ const questions = [
   }
 ];
 
-// ================= VARIABLES =================
-let index = 0;     // current question number
-let score = 0;     // total correct answers
-let time = 30;     // timer seconds
-let timer;         // timer reference
+// ===== VARIABLES =====
+let qno = 0;
+let score = 0;
+let time = 30;
+let timer;
 
-// get HTML elements
 const box = document.getElementById("question-box");
-const nextBtn = document.getElementById("next");
-const submitBtn = document.getElementById("submit");
-const timerEl = document.getElementById("timer");
+const next = document.getElementById("next");
+const submit = document.getElementById("submit");
+const timerText = document.getElementById("timer");
 
-// ================= SHOW QUESTION =================
-function showQuestion() {
-  clearInterval(timer);        // stop old timer
-  time = 30;                   // reset time
-  timerEl.textContent = "Time: " + time;
+// load question
+function load() {
+  clearInterval(timer);
+  time = 30;
+  timerText.innerText = "Time: " + time;
+  box.innerHTML = "";
 
-  box.innerHTML = "";          // clear old question
+  // question
+  box.innerHTML += `<h3>${qno + 1}. ${questions[qno].q}</h3>`;
 
-  // show question text
-  const h3 = document.createElement("h3");
-  h3.textContent = (index + 1) + ". " + questions[index].q;
-  box.appendChild(h3);
-
-  // show options
-  questions[index].options.forEach((opt, i) => {
+  // options
+  questions[qno].options.forEach((op, i) => {
     const label = document.createElement("label");
     label.className = "option";
 
-    const input = document.createElement("input");
-    input.type = "radio";
-    input.name = "option";
-    input.value = i;
+    const radio = document.createElement("input");
+    radio.type = "radio";
+    radio.name = "opt";
+    radio.value = i;
 
-    label.appendChild(input);
-    label.append(" " + opt);   // text only (safe for <a>, <img>)
+    label.appendChild(radio);
+    label.append(" " + op);
+
     box.appendChild(label);
   });
 
-  startTimer();                // start timer
+  startTimer();
 }
 
-// ================= TIMER =================
+// timer
 function startTimer() {
   timer = setInterval(() => {
     time--;
-    timerEl.textContent = "Time: " + time;
+    timerText.innerText = "Time: " + time;
 
-    // if time over, move to next question
     if (time === 0) {
-      clearInterval(timer);
-      nextQuestion();
+      next.click(); // auto go next
     }
   }, 1000);
 }
 
-// ================= CHECK ANSWER =================
-function checkCurrentAnswer() {
-  const selected = document.querySelector("input[name='option']:checked");
-
-  // if answer is correct, increase score
-  if (selected && Number(selected.value) === questions[index].answer) {
+// ans check
+function check() {
+  const selected = document.querySelector("input[name='opt']:checked");
+  if (selected && Number(selected.value) === questions[qno].answer) {
     score++;
   }
 }
 
-// ================= NEXT QUESTION =================
-function nextQuestion() {
+// next question
+next.onclick = function () {
   clearInterval(timer);
+  check();
+  qno++;
 
-  checkCurrentAnswer();   // check current answer
-  index++;                // go to next question
-
-  if (index < questions.length) {
-    showQuestion();
+  if (qno < questions.length) {
+    load();
   } else {
-    showResult();
+    result();
   }
-}
-
-// ================= SUBMIT QUIZ =================
-submitBtn.onclick = function () {
-  clearInterval(timer);
-  checkCurrentAnswer();   // check last answer
-  showResult();
 };
 
-// ================= SHOW RESULT =================
-function showResult() {
+// sub btn
+submit.onclick = function () {
+  clearInterval(timer);
+  check();
+  result();
+};
+
+// result
+function result() {
   box.innerHTML = `
-    <h2>Quiz Finished</h2>
+    <h2>Quiz Finished 🎉</h2>
     <p>Your Score: ${score} / ${questions.length}</p>
   `;
   document.querySelector(".buttons").style.display = "none";
 }
 
-// ================= BUTTON =================
-nextBtn.onclick = nextQuestion;
-
-// ================= START QUIZ =================
-showQuestion();
+// start
+load();
