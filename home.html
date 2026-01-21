@@ -8,22 +8,30 @@
   </head>
   <body>
     <div class="main">
-      <nav class="head">
-        <img class="circle-image" src="bg01.jpg" alt="Profile" />
+      <nav class="navbar">
+  <!-- LEFT : LOGO + USER -->
+  <div class="nav-left">
+    <img src="bg01.jpg" class="profile-img" alt="Profile" />
 
-        <div class="user-info">
-          <p id="home_name">MOHD ZAID</p>
-          <p id="home_email">ZAIDM1323@GMAIL.COM</p>
-        </div>
+    <div class="user-info">
+      <span id="home_name">MOHD ZAID</span>
+      <small id="home_email">zaidm1323@gmail.com</small>
+    </div>
+  </div>
 
-        <!-- SEARCH BOX -->
-        <div class="search-box">
-          <img src="browser_1285969.png" class="search-icon" alt="search" />
-          <input type="search" id="search_input" placeholder="Search..." />
-        </div>
+  <!-- CENTER : SEARCH -->
+  <div class="nav-center">
+    <img src="browser_1285969.png" class="search-icon" />
+    <input type="search" placeholder="Search quiz..." />
+  </div>
 
-        <input type="submit" class="searchbtn" value="Go" />
-      </nav>
+
+  <!-- RIGHT : BUTTON -->
+  <div class="nav-right">
+    <button class="logout-btn">Logout</button>
+  </div>
+</nav>
+
 
       <br /><br />
       <div class="topic_box">
@@ -63,12 +71,52 @@
           <button class="q_btn">Start Quiz</button>
         </div>
       </div>
-<br><br><br>
+      <br /><br /><br />
       <footer>
-        <div class="info"></div>
-        <div class="map">smns</div>
+        <div class="info">
+          <div id="title_box">
+            <h3>About QuizMaster</h3>
+            <p>
+              QuizMaster is an interactive online quiz platform designed to help
+              students and developers test their knowledge, improve skills, and
+              prepare for exams through topic-wise quizzes.
+            </p>
+          </div>
+          <div id="about">
+            <h3>Why Choose Our Quiz?</h3>
+            <p>
+              Practice real-world questions, get instant feedback, track your
+              performance, and strengthen your understanding of programming and
+              technical concepts in a fun way.
+            </p>
+          </div>
+        </div>
+        <div class="map">
+          <div id="other_1">
+            <h4>Available Quiz Topics</h4>
+            <p>
+              Python, Java, SQL, JavaScript, HTML, CSS, and General Knowledge
+              quizzes are available with multiple difficulty levels to enhance
+              learning step by step.
+            </p>
+          </div>
+          <div id="other_2">
+            <h4>Key Features</h4>
+            <p>
+              ✔ Topic-wise quizzes
+              <br> ✔ Instant result & score <br>✔ User-friendly
+              interface <br>✔ Responsive design <br>✔ Beginner-friendly questions
+            </p>
+          </div>
+          <div id="other_3">
+            <h4>Support & Credits</h4>
+            <p>
+              Need help or have suggestions? Contact us anytime. Designed &
+              Developed by Mohd Zaid © 2026 QuizMaster. All Rights Reserved.
+            </p>
+          </div>
+        </div>
       </footer>
-      
     </div>
 
     <script src="home.js"></script>
