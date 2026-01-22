@@ -185,7 +185,7 @@ submit.onclick = function () {
 // result
 function result() {
   box.innerHTML = `
-    <h2>Quiz Finished 🎉</h2>
+    <h2>Quiz Finished</h2>
     <p>Your Score: ${score} / ${questions.length}</p>
   `;
   document.querySelector(".buttons").style.display = "none";
