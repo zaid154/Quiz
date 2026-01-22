@@ -134,31 +134,31 @@
   
 }
 #q_html {
-  background-image: url("html.jpg");
+  background-image: url("./Pictures/html.jpg");
 }
 #q_css {
-  background-image: url("css_pro.jpg");
+  background-image: url("./Pictures/css_pro.jpg");
 }
 #q_js {
-  background-image: url("js.jpg");
+  background-image: url("./Pictures/js.jpg");
 }
 #q_java {
-  background-image: url("java.png");
+  background-image: url("./Pictures/java.png");
 }
 #q_php {
-  background-image: url("php.png");
+  background-image: url("./Pictures/php.png");
 }
 #q_c {
-  background-image: url("c_pro.jpg");
+  background-image: url("./Pictures/c_pro.jpg");
 }
 #q_cpp {
-  background-image: url("cpp_pro.jpg");
+  background-image: url("./Pictures/cpp_pro.jpg");
 }
 #q_py {
-  background-image: url("py.png");
+  background-image: url("./Pictures/py.png");
 }
 #q_sql {
-  background-image: url("sql.jpg");
+  background-image: url("./Pictures/sql.jpg");
 }
 
 .q_btn {

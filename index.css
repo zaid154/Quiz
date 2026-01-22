@@ -9,7 +9,7 @@
 
 /* ===== BODY BACKGROUND ===== */
 body {
-  background-image: url("bg02.jpg");
+  background-image: url("./Pictures/background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
