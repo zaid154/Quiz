@@ -1,350 +1,337 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login Page</title>
-    <style>
-      
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #000;
-}
 
-/* ===== BODY BACKGROUND ===== */
-body {
-  background-image: url("./Pictures/background.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-.main {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* ===== LOGIN & REGISTER COMMON ===== */
-.login,
-.register {
-  width: 320px;
-  padding: 30px;
-  border-radius: 30px;
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-  /* height: 30px; */
-  display: flex;
-  flex-direction: column;
-  /* gap: 25px; */
-  transition:
-    opacity 0.3s ease,
-    transform 0.3s ease;
-}
-
-/* Hide register by default */
-.register {
-  display: none;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  /* gap: 10px; */
-}
-
-/* ===== BUTTONS ===== */
-button {
-  width: 100%;
-  height: 28px;
-  border-radius: 8px;
-  border: none;
-  cursor: pointer;
-}
-
-.login_form button {
-  background: #e4c1eb;
-}
-
-.register_btn {
-  background: pink;
-}
-
-/* ===== LOGIN OPTIONS ===== */
-.login_op {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
-
-/* ===== SOCIAL ICON ===== */
-.log {
-  height: 40px;
-  width: 40px;
-  border-radius: 10px;
-  object-fit: cover;
-}
-
-/* ===== TEXT ===== */
-p {
-  font-size: 12px;
-  display: flex;
-  justify-content: center;
-}
-
-.logo_s {
-  font-size: 16px;
-  font-weight: bold;
-  color: rgb(80, 161, 232);
-}
-
-b {
-  color: black;
-}
-
-/* ===== TOGGLE ANIMATION ===== */
-.login.hidden,
-.register.hidden {
-  display: none;
-}
-
-.login.active,
-.register.active {
-  display: flex;
-  animation: fadeIn 0.3s ease;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-input {
-  height: 29px;
-  border-radius: 5px;
-  border: 0;
-  display: flex;
-  /* gap: 30px; */
-  margin-bottom: 15px;
-}
-
-    </style>
-        <link rel="icon" type="" href="./Pictures/tap_logo.png">
-  </head>
-  <body>
-    <div class="main">
-      <div class="login">
-        <!-- <div id="logo"><p class="logo_s">Quiz</p></div> -->
-        <form class="login_form">
-          <h1>Login</h1>
-          <br />
-          <label>Email ID :</label>
-          <input type="email" placeholder="  Enter email" class="enter_name"/>
-
-          <label>Password :</label>
-          <input type="password" placeholder="  Enter password" class="enter_password"/>
-          <br />
-          <button class="singnin">Sign in</button>
-          <br />
-          <p>or continue with</p>
-
-          <div class="login_op" style="margin-top: 20px">
-            <img src="./Pictures/google_pic.jpg" alt="" class="log" />
-            <img src="./Pictures/git.png" alt="" class="log" />
-            <img src="./Pictures/facbock_pic.jpg" alt="" class="log" />
-          </div>
-          <br />
-          <p>
-            Don't have an account yet? <b id="register">Register for free</b>
-          </p>
-        </form>
-      </div>
-
-      <div class="register">
-        <form>
-          <h2>Create Account</h2>
-          <br />
-          <label for="name">Full Name :</label>
-          <input
-            type="text"
-            id="name"
-            placeholder="  Enter your full name"
-            required
-          />
-
-          <label for="dob">DOB :</label>
-          <input type="date" id="dob" />
-
-          <label for="email">Email Address :</label>
-          <input
-            type="email"
-            id="email"
-            placeholder="  Enter your email"
-            required
-          />
-
-          <label for="password">Password :</label>
-          <input
-            type="password"
-            id="password"
-            placeholder="  Create a password"
-            required
-          />
-          <br />
-          <button type="submit" class="register_btn">Register</button>
-          <br />
-          <p>or continue with</p>
-          <div class="login_op" style="margin-top: 20px">
-            <img src="./Pictures/google_pic.jpg" alt="" class="log" />
-            <img src="./Pictures/git.png" alt="" class="log" />
-            <img src="./Pictures/facbock_pic.jpg" alt="" class="log" />
-          </div>
-          <br />
-          <p>
-            Already have an account?
-            <b id="login_link">Login here</b>
-          </p>
-        </form>
-      </div>
-    </div>
-    <script>
-      let registerbtn = document.getElementById("register");
-let loginLink = document.getElementById("login_link");
-
-let logs = document.querySelectorAll(".log");
-
-let login = document.querySelector(".login");
-let register = document.querySelector(".register");
-
-let signinBtn = document.querySelector(".singnin");
-let registerBtn = document.querySelector(".register_btn");
-
-/* ===== REGISTER INPUTS ===== */
-let create_fullname = document.querySelector("#name");
-let create_dob = document.querySelector("#dob");
-let create_email = document.querySelector("#email");
-let create_password = document.querySelector("#password");
-
-/* ===== LOGIN INPUTS ===== */
-let enter_email = document.querySelector(".enter_name");
-let enter_password = document.querySelector(".enter_password");
-
-/* ===== SOCIAL ICON ALERT ===== */
-logs.forEach((icon) => {
-  icon.addEventListener("click", () => {
-    alert("Temporary service disabled");
-  });
-});
-
-/* ===== LOGIN CHECK ===== */// LOGIN BUTTON
-signinBtn.addEventListener("click", (e) => {
-    e.preventDefault();
-
-    let email = enter_email.value.trim();
-    let password = enter_password.value.trim();
-
-    let storedUser = localStorage.getItem("user");
-
-    if (!storedUser) {
-        alert("No user found. Please register first");
-        return;
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #000;
     }
 
-    let user = JSON.parse(storedUser);
+    /* ===== BODY BACKGROUND ===== */
+    body {
+      background-image: url("./Pictures/background.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
 
-    if (email === user.email && password === user.password) {
+    .main {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* ===== LOGIN & REGISTER COMMON ===== */
+    .login,
+    .register {
+      width: 320px;
+      padding: 30px;
+      border-radius: 30px;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      /* height: 30px; */
+      display: flex;
+      flex-direction: column;
+      /* gap: 25px; */
+      transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+    }
+
+    /* Hide register by default */
+    .register {
+      display: none;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      /* gap: 10px; */
+    }
+
+    /* ===== BUTTONS ===== */
+    button {
+      width: 100%;
+      height: 28px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .login_form button {
+      background: #e4c1eb;
+    }
+
+    .register_btn {
+      background: pink;
+    }
+
+    /* ===== LOGIN OPTIONS ===== */
+    .login_op {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+    }
+
+    /* ===== SOCIAL ICON ===== */
+    .log {
+      height: 40px;
+      width: 40px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    /* ===== TEXT ===== */
+    p {
+      font-size: 12px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .logo_s {
+      font-size: 16px;
+      font-weight: bold;
+      color: rgb(80, 161, 232);
+    }
+
+    b {
+      color: black;
+    }
+
+    /* ===== TOGGLE ANIMATION ===== */
+    .login.hidden,
+    .register.hidden {
+      display: none;
+    }
+
+    .login.active,
+    .register.active {
+      display: flex;
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    input {
+      height: 29px;
+      border-radius: 5px;
+      border: 0;
+      display: flex;
+      /* gap: 30px; */
+      margin-bottom: 15px;
+    }
+  </style>
+  <link rel="icon" type="" href="./Pictures/tap_logo.png">
+</head>
+
+<body>
+  <div class="main">
+    <div class="login">
+      <!-- <div id="logo"><p class="logo_s">Quiz</p></div> -->
+      <form class="login_form">
+        <h1>Login</h1>
+        <br />
+        <label>Email ID :</label>
+        <input type="email" placeholder="  Enter email" class="enter_name" />
+
+        <label>Password :</label>
+        <input type="password" placeholder="  Enter password" class="enter_password" />
+        <br />
+        <button class="singnin">Sign in</button>
+        <br />
+        <p>or continue with</p>
+
+        <div class="login_op" style="margin-top: 20px">
+          <img src="./Pictures/google_pic.jpg" alt="" class="log" />
+          <img src="./Pictures/git.png" alt="" class="log" />
+          <img src="./Pictures/facbock_pic.jpg" alt="" class="log" />
+        </div>
+        <br />
+        <p>
+          Don't have an account yet? <b id="register">Register for free</b>
+        </p>
+      </form>
+    </div>
+
+    <div class="register">
+      <form>
+        <h2>Create Account</h2>
+        <br />
+        <label for="name">Full Name :</label>
+        <input type="text" id="name" placeholder="  Enter your full name" required />
+
+        <label for="dob">DOB :</label>
+        <input type="date" id="dob" />
+
+        <label for="email">Email Address :</label>
+        <input type="email" id="email" placeholder="  Enter your email" required />
+
+        <label for="password">Password :</label>
+        <input type="password" id="password" placeholder="  Create a password" required />
+        <br />
+        <button type="submit" class="register_btn">Register</button>
+        <br />
+        <p>or continue with</p>
+        <div class="login_op" style="margin-top: 20px">
+          <img src="./Pictures/google_pic.jpg" alt="" class="log" />
+          <img src="./Pictures/git.png" alt="" class="log" />
+          <img src="./Pictures/facbock_pic.jpg" alt="" class="log" />
+        </div>
+        <br />
+        <p>
+          Already have an account?
+          <b id="login_link">Login here</b>
+        </p>
+      </form>
+    </div>
+  </div>
+  <script>
+    let registerbtn = document.getElementById("register");
+    let loginLink = document.getElementById("login_link");
+
+    let logs = document.querySelectorAll(".log");
+
+    let login = document.querySelector(".login");
+    let register = document.querySelector(".register");
+
+    let signinBtn = document.querySelector(".singnin");
+    let registerBtn = document.querySelector(".register_btn");
+
+    /* ===== REGISTER INPUTS ===== */
+    let create_fullname = document.querySelector("#name");
+    let create_dob = document.querySelector("#dob");
+    let create_email = document.querySelector("#email");
+    let create_password = document.querySelector("#password");
+
+    /* ===== LOGIN INPUTS ===== */
+    let enter_email = document.querySelector(".enter_name");
+    let enter_password = document.querySelector(".enter_password");
+
+    /* ===== SOCIAL ICON ALERT ===== */
+    logs.forEach((icon) => {
+      icon.addEventListener("click", () => {
+        alert("Temporary service disabled");
+      });
+    });
+
+    /* ===== LOGIN CHECK ===== */// LOGIN BUTTON
+    signinBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      let email = enter_email.value.trim();
+      let password = enter_password.value.trim();
+
+      let storedUser = localStorage.getItem("user");
+
+      if (!storedUser) {
+        alert("No user found. Please register first");
+        return;
+      }
+
+      let user = JSON.parse(storedUser);
+
+      if (email === user.email && password === user.password) {
 
         localStorage.setItem("loginUser", JSON.stringify({
-            name: user.name,
-            email: user.email
+          name: user.name,
+          email: user.email
         }));
 
         window.location.href = "home.html";
 
-    } else {
+      } else {
         alert("Invalid credentials");
-    }
-});
+      }
+    });
 
-/* ===== REGISTER CHECK ===== */
-registerBtn.addEventListener("click", (e) => {
-  e.preventDefault();
+    /* ===== REGISTER CHECK ===== */
+    registerBtn.addEventListener("click", (e) => {
+      e.preventDefault();
 
-  if (
-    create_fullname.value.trim() === "" ||
-    create_email.value.trim() === "" ||
-    create_password.value.trim() === "" ||
-    create_dob.value.trim() === ""
-  ) {
-    alert("All fields are compulsory");
-    return;
-  }
+      if (
+        create_fullname.value.trim() === "" ||
+        create_email.value.trim() === "" ||
+        create_password.value.trim() === "" ||
+        create_dob.value.trim() === ""
+      ) {
+        alert("All fields are compulsory");
+        return;
+      }
 
-  /* ===== DOB FUTURE DATE CHECK ===== */
-  let today = new Date();
-  let dob = new Date(create_dob.value);
+      /* ===== DOB FUTURE DATE CHECK ===== */
+      let today = new Date();
+      let dob = new Date(create_dob.value);
 
-  // remove time part
-  today.setHours(0, 0, 0, 0);
+      // remove time part
+      today.setHours(0, 0, 0, 0);
 
-  if (dob > today) {
-    alert("DOB cannot be a future date");
-    return;
-  }
+      if (dob > today) {
+        alert("DOB cannot be a future date");
+        return;
+      }
 
-  /* ===== STORE USER DATA ===== */
-  let userData = {
-    name: create_fullname.value,
-    dob: create_dob.value,
-    email: create_email.value,
-    password: create_password.value,
-  };
-  
-
-  localStorage.setItem("user", JSON.stringify(userData));
-
-  alert("Account Created Successfully");
-
-  /* ===== SWITCH TO LOGIN ===== */
-  login.classList.add("active");
-  login.classList.remove("hidden");
-  register.classList.add("hidden");
-  register.classList.remove("active");
-});
-
-/* ===== TOGGLE FORMS ===== */
-registerbtn.addEventListener("click", () => {
-  register.classList.add("active");
-  register.classList.remove("hidden");
-  login.classList.add("hidden");
-  login.classList.remove("active");
-});
-
-loginLink.addEventListener("click", () => {
-  login.classList.add("active");
-  login.classList.remove("hidden");
-  register.classList.add("hidden");
-  register.classList.remove("active");
-});
+      /* ===== STORE USER DATA ===== */
+      let userData = {
+        name: create_fullname.value,
+        dob: create_dob.value,
+        email: create_email.value,
+        password: create_password.value,
+      };
 
 
+      localStorage.setItem("user", JSON.stringify(userData));
+
+      alert("Account Created Successfully");
+
+      /* SWITCH TO LOGIN */
+      login.classList.add("active");
+      login.classList.remove("hidden");
+      register.classList.add("hidden");
+      register.classList.remove("active");
+    });
+
+    /* TOGGLE FORMS  */
+    registerbtn.addEventListener("click", () => {
+      register.classList.add("active");
+      register.classList.remove("hidden");
+      login.classList.add("hidden");
+      login.classList.remove("active");
+    });
+
+    loginLink.addEventListener("click", () => {
+      login.classList.add("active");
+      login.classList.remove("hidden");
+      register.classList.add("hidden");
+      register.classList.remove("active");
+    });
 
 
 
 
-    </script>
-  </body>
+
+
+  </script>
+</body>
+
 </html>
