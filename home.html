@@ -4,7 +4,357 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="home.css" />
+    <style>
+      * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  min-height: 100vh;
+  background: rgb(0, 0, 56);
+}
+.navbar {
+  height: 65px;
+  background: #020617;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+  border-bottom: 1px solid #1e293b;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile-img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #38bdf8;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+#home_name {
+  color: #e5e7eb;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#home_email {
+  color: #94a3b8;
+  font-size: 11px;
+}
+
+
+.nav-center {
+  position: relative;
+  width: 40%;
+}
+
+.nav-center input {
+  width: 100%;
+  height: 34px;
+  padding-left: 35px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background: #020617;
+  color: #e5e7eb;
+  outline: none;
+}
+
+.nav-center input::placeholder {
+  color: #64748b;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  width: 15px;
+  transform: translateY(-50%);
+  opacity: 0.7;
+}
+
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.logout-btn {
+  padding: 7px 16px;
+  background: #38bdf8;
+  border: none;
+  border-radius: 8px;
+  color: #020617;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background: #0ea5e9;
+  transform: scale(1.05);
+}
+
+.topic_box {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.topic {
+  width: 25%;
+  min-width: 220px;
+  height: 150px;
+  background: white;
+  color: black;
+  border-radius: 15px;
+  border: 4px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 5px;
+  transition: all 0.3s ease;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.topic:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  
+}
+#q_html {
+  background-image: url("./Pictures/html.jpg");
+}
+#q_css {
+  background-image: url("./Pictures/css_pro.jpg");
+}
+#q_js {
+  background-image: url("./Pictures/js.jpg");
+}
+#q_java {
+  background-image: url("./Pictures/java.png");
+}
+#q_php {
+  background-image: url("./Pictures/php.png");
+}
+#q_c {
+  background-image: url("./Pictures/c_pro.jpg");
+}
+#q_cpp {
+  background-image: url("./Pictures/cpp_pro.jpg");
+}
+#q_py {
+  background-image: url("./Pictures/py.png");
+}
+#q_sql {
+  background-image: url("./Pictures/sql.jpg");
+}
+
+.q_btn {
+  height: 25px;
+  width: 100px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 1.8); 
+  color: white;
+  font-size: 14px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.q_btn:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  background-color: paleturquoise;
+  
+}
+
+
+footer {
+  height: 425px;
+  background: #0f172a; 
+  color: #e5e7eb;
+  font-family: Arial, sans-serif;
+}
+
+.info {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid #1e293b;
+}
+
+#title_box,
+#about {
+  width: 50%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#title_box {
+  background: #020617;
+}
+
+#about {
+  background: #020617;
+}
+
+
+footer h3,
+footer h4 {
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+/* TEXT */
+footer p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #cbd5f5;
+}
+
+.map {
+  height: 50%;
+  display: flex;
+}
+
+#other_1,
+#other_2,
+#other_3 {
+  width: 33.33%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #020617;
+  border-right: 1px solid #1e293b;
+}
+
+
+#other_3 {
+  border-right: none;
+}
+
+#other_1:hover,
+#other_2:hover,
+#other_3:hover {
+  background: #020617;
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+}
+
+
+
+
+
+
+
+
+/* tablet */
+@media (max-width: 1024px) {
+
+  .nav-center {
+    width: 60%;
+  }
+
+  .topic {
+    width: 45%;
+  }
+
+  footer {
+    height: auto;
+  }
+}
+
+
+/*  MOBILE */
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    gap: 12px;
+    padding: 15px;
+  }
+
+  .nav-left,
+  .nav-right {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-center {
+    width: 100%;
+  }
+
+  /* TOPIC BOX */
+  .topic_box {
+    gap: 20px;
+  }
+
+  .topic {
+    width: 90%;
+    height: 160px;
+  }
+
+  /* FOOTER */
+  .info {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #title_box,
+  #about {
+    width: 100%;
+  }
+
+  .map {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #other_1,
+  #other_2,
+  #other_3 {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #1e293b;
+  }
+
+  #other_3 {
+    border-bottom: none;
+  }
+}
+
+
+    </style>
     <link rel="icon" type="" href="./Pictures/tap_logo.png" />
   </head>
   <body>
@@ -117,6 +467,76 @@
       </footer>
     </div>
 
-    <script src="home.js"></script>
+    <script>
+      let home_name = document.getElementById("home_name");
+let home_email = document.getElementById("home_email");
+
+
+
+let html_btn = document.getElementById("btn_html");
+let css_btn  = document.getElementById("btn_css");
+let js_btn   = document.getElementById("btn_js");
+let c_btn    = document.getElementById("btn_c");
+let cpp_btn  = document.getElementById("btn_cpp");
+let php_btn  = document.getElementById("btn_php");
+let py_btn   = document.getElementById("btn_python");
+let java_btn = document.getElementById("btn_java");
+let sql_btn  = document.getElementById("btn_sql");
+
+
+
+let loginUser = localStorage.getItem("loginUser");
+
+if (loginUser) {
+  let user = JSON.parse(loginUser);
+  home_name.innerText = user.name;
+  home_email.innerText = user.email;
+} else {
+  window.location.href = "index.html";
+}
+
+
+
+
+function goToQuiz(button, page) {
+  button.addEventListener("click", () => {
+    window.location.href = page;
+  });
+}
+goToQuiz(html_btn, "./quiz_question/html_quiz.html");
+goToQuiz(css_btn,  "./quiz_question/css_quiz.html");
+goToQuiz(js_btn,   "./quiz_question/js_quiz.html");
+goToQuiz(c_btn,    "./quiz_question/c_quiz.html");
+goToQuiz(cpp_btn,  "./quiz_question/cpp_quiz.html");
+goToQuiz(php_btn,  "./quiz_question/php_quiz.html");
+goToQuiz(py_btn,   "./quiz_question/py_quiz.html");
+goToQuiz(java_btn, "./quiz_question/java_quiz.html");
+goToQuiz(sql_btn,  "./quiz_question/sql_quiz.html");
+
+
+let searchInput = document.getElementById("searchQuiz");
+let topics = document.querySelectorAll(".topic");
+
+searchInput.addEventListener("keyup", () => {
+  let value = searchInput.value.toLowerCase();
+
+  topics.forEach(topic => {
+    let topicId = topic.id.toLowerCase(); // q_html, q_css etc
+
+    if (topicId.includes(value)) {
+      topic.style.display = "flex";
+    } else {
+      topic.style.display = "none";
+    }
+  });
+});
+let logoutBtn = document.querySelector(".logout-btn");
+
+logoutBtn.addEventListener("click", () => {
+  localStorage.removeItem("loginUser");
+  window.location.href = "index.html";
+});
+
+    </script>
   </body>
 </html>
