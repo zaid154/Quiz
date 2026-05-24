@@ -1,0 +1,17 @@
+export const images = {
+  background: new URL("../../Pictures/background.jpg", import.meta.url).href,
+  c: new URL("../../Pictures/c_pro.jpg", import.meta.url).href,
+  cpp: new URL("../../Pictures/cpp_pro.jpg", import.meta.url).href,
+  css: new URL("../../Pictures/css_pro.jpg", import.meta.url).href,
+  facebook: new URL("../../Pictures/facbock_pic.jpg", import.meta.url).href,
+  git: new URL("../../Pictures/git.png", import.meta.url).href,
+  google: new URL("../../Pictures/google_pic.jpg", import.meta.url).href,
+  html: new URL("../../Pictures/html.jpg", import.meta.url).href,
+  java: new URL("../../Pictures/java.png", import.meta.url).href,
+  javascript: new URL("../../Pictures/js.jpg", import.meta.url).href,
+  php: new URL("../../Pictures/php.png", import.meta.url).href,
+  profile: new URL("../../Pictures/profile_pic.jpg", import.meta.url).href,
+  python: new URL("../../Pictures/py.png", import.meta.url).href,
+  search: new URL("../../Pictures/search_pic.png", import.meta.url).href,
+  sql: new URL("../../Pictures/sql.jpg", import.meta.url).href,
+};
